@@ -1,6 +1,7 @@
 var deck = {
     suits: ["hearts", "spades", "clubs", "diamonds"],
     cards: Array(52),
+    // NOTE: The function now explicitly specifies that its callee must be of type Deck
     createCardPicker: function () {
         var _this = this;
         return function () {
